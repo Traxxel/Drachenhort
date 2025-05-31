@@ -1,0 +1,135 @@
+@keyframes cardEntry {
+  0% {
+    opacity: 0;
+    transform: translate(var(--initial-x), var(--initial-y))
+      rotate(var(--initial-rotation)) scale(var(--scale));
+    filter: blur(10px) brightness(1.5);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(0) brightness(1.2);
+  }
+
+  75% {
+    transform: translate(0, 0) rotate(0deg) scale(1.1);
+  }
+
+  90% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    filter: blur(0) brightness(1);
+  }
+}
+
+.animate-card-entry {
+  animation: cardEntry 2.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: var(--delay);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* Verbesserter Glow-Effekt */
+.animate-card-entry::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  background: radial-gradient(
+    circle,
+    rgba(168, 85, 247, 0.8),
+    rgba(168, 85, 247, 0.4),
+    transparent 70%
+  );
+  border-radius: inherit;
+  opacity: 0;
+  animation: glowPulse 2.5s ease-out forwards;
+  animation-delay: var(--delay);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 1;
+    transform: scale(0.1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1) rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5) rotate(360deg);
+  }
+}
+
+/* Füge einen Trail-Effekt hinzu */
+.card-trail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(168, 85, 247, 0.3),
+    rgba(139, 92, 246, 0.3),
+    rgba(124, 58, 237, 0.3)
+  );
+  filter: blur(20px);
+  opacity: 0;
+  animation: trailEffect 2.5s ease-out forwards;
+  animation-delay: var(--delay);
+  z-index: 0;
+}
+
+@keyframes trailEffect {
+  0% {
+    opacity: 1;
+    transform: scaleX(3) scaleY(1.5) translateX(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(1) scaleY(1) translateX(0);
+  }
+}
+
+@keyframes modalEntry {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(100px) rotate(-10deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-10px) rotate(2deg);
+  }
+
+  75% {
+    transform: scale(0.95) translateY(5px) rotate(-1deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotate(0);
+  }
+}
+
+.animate-modal-entry {
+  animation: modalEntry 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  will-change: transform, opacity;
+}
+
+/* Hover-Effekt für Karten */
+.group:hover {
+  transform: scale(1.02) translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
