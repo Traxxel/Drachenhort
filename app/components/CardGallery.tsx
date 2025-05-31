@@ -16,11 +16,51 @@ interface CardCollection {
   };
 }
 
-const Description = ({ text }: { text: string }) => {
+const HighlightedText = ({
+  text,
+  searchTerm,
+}: {
+  text: string;
+  searchTerm: string;
+}) => {
+  if (!searchTerm) return <>{text}</>;
+
+  const parts = text.split(new RegExp(`(${searchTerm})`, "gi"));
+  return (
+    <>
+      {parts.map((part, index) =>
+        part.toLowerCase() === searchTerm.toLowerCase() ? (
+          <span
+            key={index}
+            className="bg-yellow-200 text-gray-900 rounded px-1 -mx-1"
+          >
+            {part}
+          </span>
+        ) : (
+          part
+        )
+      )}
+    </>
+  );
+};
+
+const Description = ({
+  text,
+  searchTerm,
+  searchInDescription,
+}: {
+  text: string;
+  searchTerm: string;
+  searchInDescription: boolean;
+}) => {
   // Ersetze \n durch tatsächliche Zeilenumbrüche und behalte Leerzeichen
   const formattedText = text.split("\\n").map((line, index) => (
     <span key={index}>
-      {line}
+      {searchInDescription ? (
+        <HighlightedText text={line} searchTerm={searchTerm} />
+      ) : (
+        line
+      )}
       {index < text.split("\\n").length - 1 && <br />}
     </span>
   ));
@@ -28,7 +68,17 @@ const Description = ({ text }: { text: string }) => {
   return <p className="text-gray-800 whitespace-pre-wrap">{formattedText}</p>;
 };
 
-const CardModal = ({ card, onClose }: { card: Card; onClose: () => void }) => {
+const CardModal = ({
+  card,
+  onClose,
+  searchTerm,
+  searchInDescription,
+}: {
+  card: Card;
+  onClose: () => void;
+  searchTerm: string;
+  searchInDescription: boolean;
+}) => {
   return (
     <div
       className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center"
@@ -39,13 +89,19 @@ const CardModal = ({ card, onClose }: { card: Card; onClose: () => void }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between items-start mb-6">
-          <h2 className="text-3xl font-bold text-gray-900">{card.Name}</h2>
+          <h2 className="text-3xl font-bold text-gray-900">
+            <HighlightedText text={card.Name} searchTerm={searchTerm} />
+          </h2>
           <span className="px-4 py-2 bg-purple-100 text-purple-600 text-sm font-medium rounded-full">
             {card.cardType}
           </span>
         </div>
         <div className="prose prose-lg max-w-none">
-          <Description text={card.Description} />
+          <Description
+            text={card.Description}
+            searchTerm={searchTerm}
+            searchInDescription={searchInDescription}
+          />
         </div>
         <button
           onClick={onClose}
@@ -80,6 +136,7 @@ export default function CardGallery() {
   const [showEntryAnimation, setShowEntryAnimation] = useState(true);
   const [animationComplete, setAnimationComplete] = useState(false);
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
+  const [searchInDescription, setSearchInDescription] = useState(false);
 
   useEffect(() => {
     // Lade die Kartendaten aus der JSON-Datei
@@ -122,9 +179,10 @@ export default function CardGallery() {
   );
 
   const filteredCards = allCards.filter((card) => {
-    const matchesSearch = card.Name.toLowerCase().includes(
-      searchTerm.toLowerCase()
-    );
+    const matchesSearch =
+      card.Name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (searchInDescription &&
+        card.Description.toLowerCase().includes(searchTerm.toLowerCase()));
     const matchesType = filterType === "all" || card.cardType === filterType;
     return matchesSearch && matchesType;
   });
@@ -161,9 +219,20 @@ export default function CardGallery() {
             ))}
           </select>
         </div>
-        <div className="mt-4 text-sm text-gray-600">
-          {filteredCards.length}{" "}
-          {filteredCards.length === 1 ? "Karte" : "Karten"} gefunden
+        <div className="mt-4 flex items-center gap-2">
+          <label className="flex items-center gap-2 text-sm text-gray-600 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={searchInDescription}
+              onChange={(e) => setSearchInDescription(e.target.checked)}
+              className="w-4 h-4 text-purple-500 rounded border-gray-300 focus:ring-purple-500"
+            />
+            Suche auch in Beschreibungstexten
+          </label>
+          <div className="flex-1 text-right text-sm text-gray-600">
+            {filteredCards.length}{" "}
+            {filteredCards.length === 1 ? "Karte" : "Karten"} gefunden
+          </div>
         </div>
       </div>
 
@@ -195,14 +264,18 @@ export default function CardGallery() {
               <div className="p-6 relative z-10">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
-                    {card.Name}
+                    <HighlightedText text={card.Name} searchTerm={searchTerm} />
                   </h3>
                   <span className="px-3 py-1 bg-purple-100 text-purple-600 text-xs font-medium rounded-full">
                     {card.cardType}
                   </span>
                 </div>
                 <div className="prose prose-sm">
-                  <Description text={card.Description} />
+                  <Description
+                    text={card.Description}
+                    searchTerm={searchTerm}
+                    searchInDescription={searchInDescription}
+                  />
                 </div>
               </div>
               {showEntryAnimation && !animationComplete && (
@@ -214,7 +287,12 @@ export default function CardGallery() {
       </div>
 
       {selectedCard && (
-        <CardModal card={selectedCard} onClose={() => setSelectedCard(null)} />
+        <CardModal
+          card={selectedCard}
+          onClose={() => setSelectedCard(null)}
+          searchTerm={searchTerm}
+          searchInDescription={searchInDescription}
+        />
       )}
 
       {filteredCards.length === 0 && (
