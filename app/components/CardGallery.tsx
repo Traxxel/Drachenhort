@@ -15,15 +15,15 @@ interface CardCollection {
 }
 
 const Description = ({ text }: { text: string }) => {
-  return (
-    <>
-      {text.split("\\n").map((line, index) => (
-        <p key={index} className="text-gray-800">
-          {line}
-        </p>
-      ))}
-    </>
-  );
+  // Ersetze \n durch tatsächliche Zeilenumbrüche und behalte Leerzeichen
+  const formattedText = text.split("\\n").map((line, index) => (
+    <span key={index}>
+      {line}
+      {index < text.split("\\n").length - 1 && <br />}
+    </span>
+  ));
+
+  return <p className="text-gray-800 whitespace-pre-wrap">{formattedText}</p>;
 };
 
 export default function CardGallery() {
