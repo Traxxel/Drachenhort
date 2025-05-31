@@ -1,0 +1,280 @@
+{
+  "Drachenhort": {
+    "Raumkarten": [
+      {
+        "Name": "Armreif oder Juwelen",
+        "Description": "Sie haben einen kleinen Schatz gefunden. Legen Sie diese Karte aufgedeckt neben Ihre Charakterkarte. Sie können den Gegenstand behalten. Sein Wert zählt am Ende des Spiels zu Ihrem Gesamtvermögen.",
+        "Image": ""
+      },
+      {
+        "Name": "Bolzenfalle",
+        "Description": "Pfeile schießen auf Sie aus der Wand! Sie verlieren W12-Rüstung LP.",
+        "Image": ""
+      },
+      {
+        "Name": "Einsturz",
+        "Description": "Wählen Sie eine Zahl zwischen 1 und 6 und teilen Sie sie den anderen mit. Jetzt würfeln Sie mit dem W6. Erscheint eben diese Zahl, wird Ihr Charakter unter dem einstürzenden Schutt begraben. Er ist tot und Sie scheiden aus dem Spiel aus. Erscheint sie nicht (noch einmal Glück gehabt!), würfeln Sie erneut mit W6, wie viele LP Sie einbüßen müssen.",
+        "Image": ""
+      },
+      {
+        "Name": "Fackel erlischt",
+        "Description": "Sobald Sie diese Karte ziehen, ist Ihr Zug beendet. Legen Sie sie neben Ihrer Charakterkarte ab. Zu Beginn Ihres nächsten Zuges können Sie versuchen, Ihre Fackel erneut anzuzünden. Sie nennen dazu drei Zahlen von 1 - 6 und würfeln mit W6. Erscheint eine der zuvor gewählten Zahlen, brennt die Fackel wieder und Sie können nun Ihren Zug ausführen; legen Sie die Karte ab. Würfeln Sie nicht passend, müssen Sie erneut aussetzen und auf die nächste Chance im folgenden Zug warten. Die Karte bleibt so lange bei Ihnen liegen, bis die Fackel wieder brennt.",
+        "Image": ""
+      },
+      {
+        "Name": "Falltür",
+        "Description": "Prüfen Sie ihre Gewandtheit. Würfeln Sie dazu mit W12. Ist der Wert kleiner oder gleich Ihrem Eigenschaftswert Gewandtheit, so sind Sie der Falle ausgewichen und Ihr Zug endet. Legen Sie die Karte auf ihren Ablagestapel. Haben Sie jedoch zu hoch gewürfelt, fallen Sie durch die Falltür in eine Grube und verlieren W6 LP. Legen Sie jetzt die Karte neben Ihrer Charakterkarte ab. Ihr Zug endet ebenfalls. Würfeln Sie im nächsten Zug erneut mit W12. Ist das Ergebnis diesmal kleiner oder \"gleich Ihrem Gewandtheitswert, können Sie aus der Grube klettern. Ansonsten bleiben Sie in ihr gefangen und müssen es in der nächsten Runde erneut versuchen usw. Sie bleiben so lange in der Grube, bis Ihnen ein Wurf auf Ihr Geschick gelingt. Sind Sie der Falle entkommen, legen Sie die Karte auf Ihren Ablagestapel und führen nun noch einen normalen Zug aus. Besitzen Sie ein Seil (Leichenkarten), klettern Sie, nachdem Sie in die Grube gefallen sind, automatisch im darauffolgenden Zug heraus. Das Seil geht dadurch nicht verloren.",
+        "Image": ""
+      },
+      {
+        "Name": "Gruft",
+        "Description": "Sie können die Gruft untersuchen (Gruftkarten). Wenn Sie lieber die Finger davon lassen wollen, legen Sie diese Karte einfach ab.",
+        "Image": ""
+      },
+      {
+        "Name": "Hinterhalt",
+        "Description": "Der Charakter des Spielers wird hinterrücks überfallen. Ein W12-Wurf entscheidet, wie viele LP das Monster dem Charakter bei diesem Angriff raubt. Anschließend folgt ein Kampf nach normalen Regeln. Der angegriffene Spieler kann sich jedoch nur für Angriff oder Flucht, nicht aber für Abwarten entscheiden.",
+        "Image": ""
+      },
+      {
+        "Name": "Leer",
+        "Description": "Der Raum ist leer - es geschieht nichts.",
+        "Image": ""
+      },
+      {
+        "Name": "Monster",
+        "Description": "Goblin, Bergtroll, Todeskrieger, Ork oder Chaosmeister, siehe Kapitel 8.1 im Regelbuch.",
+        "Image": ""
+      },
+      {
+        "Name": "Riesenspinne",
+        "Description": "Wenn Sie diese Karte ziehen, können Sie entweder kämpfen oder flüchten. Wenn Sie zu flüchten versuchen, werfen Sie den W6: Bei 3-6 können Sie fliehen und müssen in jenes Feld zurück, von dem sie gekommen sind (wie beim Fliehen im Kampf); bei einer 1-2 müssen Sie kämpfen: Sie wählen drei Zahlen von 1-6 und würfeln dann mit dem W6. Erscheint eine der zuvor gewählten Zahlen, haben Sie die Spinne überwunden. Legen Sie die Karte auf ihren Ablagestapel. Werfen Sie keine der von Ihnen zuvor genannten Zahlen, verlieren Sie 1 LP, Ihr Zug ist zu Ende und Sie müssen die Spinne im nächsten Zug erneut bekämpfen (Sie können dann nicht fliehen!). Sie müssen so lange mit der Spinne kämpfen, bis sie tot ist. Erst im darauffolgenden Zug dürfen Sie sich dann weiterbewegen. Achtung: Farendil kann mit seiner Armbrust bis zu vier Pfeile gleichzeitig auf die Spinne feuern (vor dem Würfeln die Anzahl bestimmen). Für jeden Pfeil, den er schießt, wirft er mit einem W6. Er tötet die Spinne, wenn er zusammen mindestens eine 5 erreicht. Schafft er dies nicht, verliert er 1 LP und der Zug ist zu Ende.",
+        "Image": ""
+      },
+      {
+        "Name": "Speerfalle",
+        "Description": "Sie haben eine Falle ausgelöst, und rasiermesserscharfe Speere erscheinen aus den Wänden um sie herum. Auf dem Boden sind 3 Steinplatten, von denen eine die Falle ausschaltet. Doch welche ist es...? Der Spieler zu ihrer Rechten nimmt einen W6 und legt ihn, verdeckt von seiner Hand, mit einer Zahl von 1 bis 3 nach oben auf den Tisch. Sie dürfen nun zwei Zahlen aussuchen und sie laut aussprechen. Wenn eine der beiden genannten Zahlen auf dem Würfel ist, haben sie die Falle ausgeschaltet. Falls nicht, dann wird ihr Charakter von den vorschießenden Speeren durchbohrt und getötet und für sie ist dieses Spiel beendet.",
+        "Image": ""
+      },
+      {
+        "Name": "Toter Abenteurer",
+        "Description": "Sie können die Leiche untersuchen (Leichenkarten). Wenn Sie das lieber lassen wollen, legen Sie diese Karte einfach ab.",
+        "Image": ""
+      },
+      {
+        "Name": "Trank",
+        "Description": "Sie können diese Karte behalten, wenn Sie wollen. Legen Sie sie neben Ihre Charakterkarte. Sie können den Trank zu Beginn eines beliebigen Zuges (außer während des Kampfes mit der Riesenspinne) zu sich nehmen. Sie werfen den W12 und lesen das Resultat aus der Tränketabelle auf dem Spielbrett ab. Legen Sie die Karte dann auf ihren Ablagestapel und beginnen Sie jetzt mit Ihrem normalen Zug. Sie können immer nur einen Trank bei sich führen. Finden Sie währenddessen einen anderen, müssen Sie ihn wieder ablegen (In einem solchen Fall ist es nicht erlaubt, den mitgeführten Trank schnell zu trinken, um den eben gefundenen mitnehmen zu können, da ein Trank ja nur zu Beginn eines Zuges getrunken werden kann!)",
+        "Image": ""
+      },
+      {
+        "Name": "T'Siramans Fluch",
+        "Description": "In dem Moment, in dem Sie diese Karte ziehen, beginnen sämtliche Korridore (gelber Pfeil) der Drachenhortfestung zu rotieren. Würfeln Sie mit W6:\n1 -2 90° im Uhrzeigersinn\n3-4 180°\n5-6 90°gegen den Uhrzeigersinn",
+        "Image": ""
+      },
+      {
+        "Name": "Vampirfledermäuse",
+        "Description": "Würfeln Sie gemäß der Angabe auf der Karte und ziehen Sie sich entsprechend viele LP ab.",
+        "Image": ""
+      }
+    ],
+    "Leichenkarten": [
+      {
+        "Name": "Golddukaten oder Halskette",
+        "Description": "Sie haben einen kleinen Schatz gefunden. Legen Sie die Karte aufgedeckt neben Ihre Charakterkarte. Sie können den Gegenstand behalten. Sein Wert zählt am Ende des Spiels zu Ihrem Gesamtvermögen.",
+        "Image": ""
+      },
+      {
+        "Name": "Nichts",
+        "Description": "Sie finden außer alten Knochen nichts von Interesse",
+        "Image": ""
+      },
+      {
+        "Name": "Seil",
+        "Description": "Sie können diese Karte aufbewahren, falls Sie möchten. Wenn Sie durch eine Falltür stürzen sollten, können Sie mit dem Seil ohne Schwierigkeiten aus der Grube herausklettern.",
+        "Image": ""
+      },
+      {
+        "Name": "Skorpion",
+        "Description": "Würfeln Sie gemäß der Angabe auf der Karte und ziehen Sie sich entsprechend viele LP ab.",
+        "Image": ""
+      },
+      {
+        "Name": "Trank",
+        "Description": "Siehe Raumkarten Trank.",
+        "Image": ""
+      }
+    ],
+    "Gruftkarten": [
+      {
+        "Name": "Falle",
+        "Description": "Würfeln Sie gemäß der Angabe auf der Karle und ziehen Sie sich entsprechend viele LP ab.",
+        "Image": ""
+      },
+      {
+        "Name": "Leer",
+        "Description": "Sie finden nichts.",
+        "Image": ""
+      },
+      {
+        "Name": "Schätze",
+        "Description": "Golddukaten, Juwelendolch, Armreif oder Brosche: Sie haben einen kleinen Schatz gefunden. Legen Sie die Karte aufgedeckt neben Ihre Charakterkarte. Sie können den Gegenstand behalten. Sein Wert zählt am Ende des Spiels zu Ihrem Gesamtvermögen.",
+        "Image": ""
+      },
+      {
+        "Name": "Skelett",
+        "Description": "Werfen Sie einen W6:\n1 -3 Es geschieht nichts. Legen Sie diese Karte auf ihren Ablagestapel.\n4-6 Das Skelett bewegt sich und springt aus der Gruft! Verfahren Sie wie in einem normalen Kampf gegen einen Todeskrieger (s. Kapitel 8 im Regelbuch).",
+        "Image": ""
+      },
+      {
+        "Name": "Trank",
+        "Description": "Siehe Raumkarten \"Trank\".",
+        "Image": ""
+      }
+    ],
+    "Türkarten": [
+      {
+        "Name": "Falle",
+        "Description": "In der Tür ist eine Falle eingebaut! Würfeln Sie gemäß der Angabe auf der Karte und ziehen Sie sich entsprechend viele LP ab. Ihr Zug endet hier, aber in der nächsten Runde können Sie erneut versuchen, diese Tür zu öffnen (neue Türkarte ziehen).",
+        "Image": ""
+      },
+      {
+        "Name": "Tür klemmt",
+        "Description": "Die Tür scheint zu klemmen, sie läßt sich nicht öffnen. Ihr Zug ist beendet. Sie können es im nächsten Zug erneut versuchen.",
+        "Image": ""
+      },
+      {
+        "Name": "Tür öffnet sich",
+        "Description": "Sie können ungehindert den Weg durch die Tür nehmen.",
+        "Image": ""
+      }
+    ],
+    "Fallekarten": [
+      {
+        "Name": "Bolzenfalle",
+        "Description": "Siehe Raumkarte: \"Bolzenfalle\"",
+        "Image": ""
+      },
+      {
+        "Name": "Einsturz",
+        "Description": "Siehe Raumkarte: \"Einsturz\"",
+        "Image": ""
+      },
+      {
+        "Name": "Explosion",
+        "Description": "Sie verlieren 4 LP und müssen in der nächsten Runde aussetzen",
+        "Image": ""
+      },
+      {
+        "Name": "Falltür",
+        "Description": "Siehe Raumkarte: \"Falltür\"",
+        "Image": ""
+      },
+      {
+        "Name": "Giftgas",
+        "Description": "Sie verlieren W6-3 LP und müssen die nächsten W6-3 Runden aussetzen.",
+        "Image": ""
+      },
+      {
+        "Name": "Giftschlangen",
+        "Description": "Würfeln Sie gemäß der Angabe auf der Karte und ziehen Sie sich entsprechend viele LP ab.",
+        "Image": ""
+      },
+      {
+        "Name": "Speerfalle",
+        "Description": "Siehe Raumkarte: \"Speerfalle\"",
+        "Image": ""
+      }
+    ],
+    "Suchkarten": [
+      {
+        "Name": "Falle",
+        "Description": "Sie haben eine Falle ausgelöst. Ziehen Sie eine Fallel-Karte.",
+        "Image": ""
+      },
+      {
+        "Name": "Geheimtür",
+        "Description": "Sie können sofort auf ein beliebiges angrenzendes Feld ziehen (nicht diagonal!), so als würden Sie durch einen normalen Durchgang in einen anderen Raum gehen. Ist dieses Feld leer, dann ziehen Sie ein Raumteil nach den normalen Regeln (über Eintrittspfeil betreten!). Sollte Sie in diesem Raum ein Monster erwarten, können Sie nicht Flucht wählen!",
+        "Image": ""
+      },
+      {
+        "Name": "Leer",
+        "Description": "Sie finden nichts!",
+        "Image": ""
+      },
+      {
+        "Name": "Riesentausendfüßer",
+        "Description": "Sie verlieren W12 LP!",
+        "Image": ""
+      },
+      {
+        "Name": "Schätze",
+        "Description": "Goldbrosche, Juwelenoder Ring: Sie haben einen kleinen Schatz gefunden. Legen Sie diese Karte aufgedeckt neben Ihre Charakterkarte. Sie können den Gegenstand behalten. Sein Wert zählt am Ende des Spiels zu Ihrem Gesamtvermögen.",
+        "Image": ""
+      },
+      {
+        "Name": "Trank",
+        "Description": "Siehe Raumkarte: \"Trank\"",
+        "Image": ""
+      }
+    ],
+    "Schatzkarten": [
+      {
+        "Name": "Schatztruhe",
+        "Description": "Wenn Sie es schaffen, der Drachenhortfeste zu entkommen, dürfen Sie die Truhe öffnen, wobei der W12 geworfen wird. Bei einem Ergebnis von 5 oder mehr enthält die Truhe die Augenzahl multipliziert mit 100 an Goldstücken. Falls Sie 4 oder weniger gewürfelt haben, war die Truhe eine Falle-die explodiert! Siebleiben unverletzt, aber eine andere Schatzkarte wird zerstört (ein Mitspieler zieht einen Ihrer Schätze - blind). Beachten Sie, daß Sie die Truhe nicht öffnen müssen - wenn Sie das Risiko nicht eingehen wollen, legen Sie die Karte einfach ab.",
+        "Image": ""
+      },
+      {
+        "Name": "Sonnenstein und Mondstein",
+        "Description": "Für sich allein sind diese Schätze nur 1100 bzw. 700 Goldstücke wert (wie auf den Karten angegeben). Wenn es Ihnen aber gelingt, alle beide zu finden, erhöht sich ihr Gesamtwert auf 10.000 Goldstücke, was sie zu den wertvollsten Gegenständen der Drachenhortfeste macht!",
+        "Image": ""
+      },
+      {
+        "Name": "Zauberbuch",
+        "Description": "Sie haben eines der magischen Bücher T'Siramans gefunden. Sie können es öffnen und versuchen, einen Spruch zu wirken.\nWürfeln Sie mit W12:\n1 -2 Alarm! Der Drache wacht auf und tötet Ihren Charakter. Alle anderen Charaktere in der Schatzkammer müssen den normalen Regeln folgen, wenn der Drache aufwacht (s. Kapitel 9.2 im Regelbuch).\n3-4 Fluch! Sie verlieren sofort W6 LP\n5-9 Sie können den Zauberspruch nicht lesen, es geschieht nichts.\n10 Zauber des zweiten Gesichts: Solange Sie sich in der Schatzkammer befinden, dürfen Sie 4 Schatzkärtchen (statt 2) ziehen und davon 2 behalten (die anderen beiden müssen abgelegt werden).\n11 Zauber der Lebenskraft: Sie erhalten alle LP zurück. Stellen Sie den Marker wieder auf den Anfangswert.\n12 Zauber der Teleportation: Sie werden aus der Drachenhortfeste gebracht und haben so das Spiel überlebt. Unglücklicherweise konnten Sie nur 2 Schätze aus der Schatzkammer mitnehmen (ein Mitspieler zieht die beiden Karten-blind!)\nMöchten Sie keinen Spruch anwenden, müssen Sie die \"Zauberbuch\"-Karte sofort wieder unter den Schatzkartenstapel mischen. Auch wenn Sie einen Spruch gewirkt haben, wird die Karte wieder untergemischt.\nSollten Sie später diese Karte erneut ziehen, können Sie wieder entscheiden, ob Sie einen Spruch anwenden oder die Karte direkt zurücklegen wollen.",
+        "Image": ""
+      }
+    ],
+    "SpezielleRaumteile": [
+      {
+        "Name": "Abgrund (dunkelblauer Pfeil)",
+        "Description": "Wenn Sie einen Abgrund ziehen, würfeln Sie mit dem W12 anstatt eine Raumkarte zu ziehen. Würfeln Sie kleiner oder gleich Ihrem Gewandtheitswert, gelingt es Ihnen, den Abgrund geschickt zu überwinden. Im nächsten Zug können Sie allerdings nur auf der gegenüberliegenden Seite normal weiterziehen. Würfeln Sie zu hoch, dann stürzt Ihr Charakter leider in die Tiefe! Das Spiel ist für Sie zu Ende. Sie können in Abgrund-Raumteilen niemals suchen oder freiwillig aussetzen.",
+        "Image": ""
+      },
+      {
+        "Name": "Einsturz (grüner Pfeil)",
+        "Description": "Ziehen Sie wie gewöhnlich eine Raumkarte. Im nächsten Zug jedoch, bevor Sie sich weiterbewegen, müssen Sie entweder auf Ihre Gewandtheit würfeln (kleiner oder gleich Ihrem Wert) oder in das Feld zurückgehen, aus dem Sie gekommen sind. Wenn Sie sich für den Wurf auf Ihre Gewandtheit entschieden haben, und Sie waren erfolgreich, können Sie nun in einer gewünschten (möglichen) Richtung einen normalen Zug ausführen. Würfeln Sie einen Wert über Ihrer Gewandtheit, gehen Sie dem sperrigen Gerumpel in die Falle und stecken zwischen Brettern und Steinen fest. Sie müssen in diesem Zug aussetzen. Im nächsten Zug können Sie erneut entscheiden, auf das Feld zurückzukehren, von dem Sie gekommen sind, oder nochmals zu würfeln, um endlich in die gewünschte Richtung zu gelangen.\n(Achtung: Die Regeln für das Räumteil Einsturz sind mit denen der Raumkarte Ein- sturz nicht identisch!)",
+        "Image": ""
+      },
+      {
+        "Name": "Kammer der Finsternis (oranger Pfeil)",
+        "Description": "In der Kammer der Finsternis darf keine Raumkarte gezogen werden. Der Zug endet zunächst. Die böse Magie T'Siramans hat diese Kammer in absolute Finsternis gehüllt. Selbst die noch brennende Fackel spendet keinen Strahl Licht mehr. Sie verlieren völlig die Orientierung und zu Beginn des nächsten Zuges müssen Sie sich an einen Durchgang tasten. Welcher es sein wird, sagt Ihnen ein W6-Wurf:\n\nDer Raum hat 2 Ausgänge:\n1-3 Sie verlassen die Kammer durch den Durchgang, durch den Sie hereingekommen sind.\n4-6 Sie verlassen die Kammer durch den anderen Durchgang.\n\nDer Raum hat 3 Ausgänge:\n1-2 Sie verlassen die Kammer durch den Durchgang, durch den Sie hereingekommen sind\n3-4 Sie verlassen den Raum durch den nächsten Durchgang im Uhrzeigersinn.\n5-6 Sie verlassen den Raum durch den nächsten Durchgang gegen den Uhrzeigersinn.\nIst der erwürfelte Durchgang unpassierbar (z.B. weil er an eine Wand führt), müssen Sie in diesem Zug aussetzen und es im folgenden Zug noch einmal versuchen, so lange, bis sie es geschafft haben. Die Kammer der Finsternis kann nicht durchsucht werden.",
+        "Image": ""
+      },
+      {
+        "Name": "Kluft (hellgrüner Pfeil)",
+        "Description": "Eine breite, gefährlich tiefe Kluft durchteilt diesen Raum. Ziehen Sie wie gewöhnlich eine Raumkarte. Im nächsten Zug können Sie diesen Raum nur durch Durchgänge wieder verlassen, die auf derselben Seite der Kluft liegen. Kommt es in diesem Raum zu einem Kampf, so müssen Sie jedesmal, wenn Sie LP verlieren, gleich danach mit dem W12-4 kleiner oder gleich Ihrer Gewandtheit würfeln. Gelingt die Probe auf Ihre Gewandtheit, geht der Kampf normal weiter. Ist Ihr Wurf zu hoch, stürzt Ihr Charakter in die Kluft und Sie scheiden aus dem Spiel aus. Die Kluft kann nicht durchsucht werden.",
+        "Image": ""
+      },
+      {
+        "Name": "Korridor (gelber Pfeil)",
+        "Description": "Wenn Sie einen Korridor erreichen, ziehen Sie keine Raumkarte. Der Korridor bringt Sie so schnell voran, daß Sie gleich noch einmal ziehen dürfen. (Gelangen sie wieder in einen Korridor, können Sie nochmals ziehen usw.) Korridore können nicht durchsucht werden.",
+        "Image": ""
+      },
+      {
+        "Name": "Fallgitter (violetter Pfeil)",
+        "Description": "Ein schweres eisernes Fallgitter stößt hinter Ihnen knirschend in den Boden. Ziehen Sie wie gewöhnlich eine Raumkarte. Ist es ein Monster, können Sie nicht fliehen. Möchten Sie ein Fallgitter passieren, müssen Sie versuchen, es hochzuschieben. Würfeln Sie mit dem W12 kleiner oder gleich ihrem Stärke-Wert, können Sie normal in den dahinterliegenden Raum ziehen. Gelingt es Ihnen nicht, ist Ihr Zug beendet, aber Sie können es in der nächsten Runde erneut versuchen.",
+        "Image": ""
+      },
+      {
+        "Name": "Drehkammer (hellblauer Pfeil)",
+        "Description": "Betreten Sie eine Drehkammer, dann ziehen Sie keine Raumkarte. Statt dessen finden Sie das Raumteil mitsamt ihrem Charakter um 180° gedreht wieder. Ihr Zug ist zu Ende. Die Drehkammer kann nur ein einziges Mal rotieren und das in dem Moment, in dem sie gezogen wird. Sie können also nicht mehr denselben Weg zurückgehen, den Sie gekommen sind. Führt der einzige Durchgang an eine Wand der Festung oder eines anderen Raumteils, ist Ihr Charakter für immer eingesperrt, und Sie scheiden aus dem Spiel aus. Drehkammern können nicht durchsucht werden.",
+        "Image": ""
+      },
+      {
+        "Name": "Falle! (roter Pfeil)",
+        "Description": "Sie sind in eine Falle gelaufen! Immer wenn Sie ein solches Raumteil betreten, müssen Sie eine Falle!-Karte statt einer Raumkarte ziehen. Fallenräume können nicht durchsucht werden.",
+        "Image": ""
+      }
+    ]
+  }
+}
