@@ -7,7 +7,30 @@ Eine moderne Web-Anwendung zur Anzeige und Durchsuche der Spielkarten aus dem Br
 - **🔍 Kartensuche**: Schnelle Suche nach Kartennamen
 - **🏷️ Filterung**: Filterung nach Kartentypen (Raumkarten, Leichenkarten, Gruftkarten, etc.)
 - **📱 Responsive Design**: Optimierte Darstellung auf allen Geräten
-- **💫 Moderne Benutzeroberfläche**: Klare und übersichtliche Darstellung der Karten
+- **💫 Spektakuläre Animationen**:
+  - Dynamische Eingangsanimation beim ersten Besuch
+  - Karten fliegen aus allen Richtungen ein
+  - Leuchtende Bewegungsspuren
+  - Glasmorphismus-Effekte
+- **🔎 Detailansicht**:
+  - Große Modal-Ansicht durch Klick auf eine Karte
+  - Animierter Zoom-Effekt
+  - Verbesserte Lesbarkeit der Kartentexte
+
+## 🎨 Design-Features
+
+- **Moderne UI-Elemente**:
+
+  - Glasmorphismus-Effekte in der Suchleiste
+  - Hover-Effekte auf Karten
+  - Schatten und Rundungen für Tiefenwirkung
+  - Farbige Badges für Kartentypen
+
+- **Animationen**:
+  - Einfliegende Karten mit Rotation
+  - Leuchtspuren und Glow-Effekte
+  - Sanfte Übergänge und Hover-States
+  - Modal-Animation mit Bounce-Effekt
 
 ## 🛠️ Technologien
 
@@ -15,6 +38,7 @@ Eine moderne Web-Anwendung zur Anzeige und Durchsuche der Spielkarten aus dem Br
 - **TypeScript**: Typsichere Entwicklung
 - **Tailwind CSS**: Modernes, utility-first CSS Framework
 - **React Hooks**: Für State Management und Seiteneffekte
+- **CSS Animations**: Für flüssige, performante Animationen
 
 ## 🚀 Lokale Entwicklung
 
@@ -45,6 +69,7 @@ npm run dev
 Drachenhort/
 ├── app/                    # Next.js App-Verzeichnis
 │   ├── components/        # React-Komponenten
+│   │   └── CardGallery/  # Hauptkomponente mit Animationen
 │   ├── page.tsx          # Hauptseite
 │   └── layout.tsx        # Layout-Komponente
 ├── public/               # Statische Dateien
