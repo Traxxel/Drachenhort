@@ -2,9 +2,12 @@
 
 Eine moderne Web-Anwendung zur Anzeige und Durchsuche der Spielkarten aus dem Brettspiel "Drachenhort".
 
-## 🎯 Funktionen
+## �� Funktionen
 
-- **🔍 Kartensuche**: Schnelle Suche nach Kartennamen
+- **🔍 Erweiterte Suche**:
+  - Schnelle Suche nach Kartennamen
+  - Optional auch in Kartenbeschreibungen
+  - Hervorhebung der Suchergebnisse
 - **🏷️ Filterung**: Filterung nach Kartentypen (Raumkarten, Leichenkarten, Gruftkarten, etc.)
 - **📱 Responsive Design**: Optimierte Darstellung auf allen Geräten
 - **💫 Spektakuläre Animationen**:
@@ -16,6 +19,7 @@ Eine moderne Web-Anwendung zur Anzeige und Durchsuche der Spielkarten aus dem Br
   - Große Modal-Ansicht durch Klick auf eine Karte
   - Animierter Zoom-Effekt
   - Verbesserte Lesbarkeit der Kartentexte
+  - Hervorhebung der Suchergebnisse auch in der Detailansicht
 
 ## 🎨 Design-Features
 
@@ -25,6 +29,7 @@ Eine moderne Web-Anwendung zur Anzeige und Durchsuche der Spielkarten aus dem Br
   - Hover-Effekte auf Karten
   - Schatten und Rundungen für Tiefenwirkung
   - Farbige Badges für Kartentypen
+  - Gelbe Hervorhebung für gefundene Suchbegriffe
 
 - **Animationen**:
   - Einfliegende Karten mit Rotation
